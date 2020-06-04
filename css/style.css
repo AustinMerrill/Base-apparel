@@ -1,17 +1,49 @@
-
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
 .header{
     background: white;
-    padding:20px;
+    /* padding:25px; */
+    /* padding:25px 0; */
+    width: 100%;
+    /* width: calc(100% - 530px); */
 }
+
+.big-font {
+    font-size: 72px;
+    color: green;
+}
+
+.header img {
+    padding: 25px 0;
+    padding-left: 25px;
+}
+
 body{
     /* background-image: url('/images/bg-pattern-desktop.svg'); */
     margin:0;
     background-color: #faf2f2;
-    width:375px;
+    /* width:375px; */
+    width: 100%;
+    disp
+}
+
+main {
+    /* background-color: #faf2f2; */
+}
+
+.hero-image {
+    /* border: 2px solid orange; */
+    width: 100%;
+}
+.girl{
+    width: 100%;
+    /* width: 100px; */
 }
 h1{
-   margin-left:30px;
-   margin-top :30px;
+   /* margin-left:30px; */
+   /* margin-top :30px; */
 }
 .top-h2{
     text-align: center;
@@ -45,11 +77,118 @@ input{
 button{
 display: inline;
 width:64px;
-height:52px;
+height:54px;
 border-radius:28px;
 background-color: #c66e6e;
 position: relative;
 left:287px;
 bottom:53px;
 border:none;
+}
+.desktop{
+    display:none;
+}
+
+.show-error-message{
+    font-size: 6px;
+    color:#f96464;
+   margin-left:125px;
+   margin-top: 0;
+}
+.show-error-image{
+   width:24px;
+   height:24px;
+    position: relative;
+    left:250px;
+    bottom:100px;
+
+}
+
+@media (min-width:600px){
+body{
+    width:1440px;
+    background-image: url('/images/bg-pattern-desktop.svg');
+    background-image: url('/images/hero-desktop.jpg');
+    background-repeat:no-repeat;
+    background-position: right;
+    background-size: 50% 100%;
+}
+html{
+    height:100%
+}
+.hero-image{
+   display:none;
+}
+.top-h2{
+    float:left;
+    font-size:64px;
+    margin-top:136px;
+    line-height:71px;
+    margin-left:165px;
+    text-align: left;
+}
+span{
+    font-size:64px;
+}
+.header{
+   background:none;
+   width:158px;
+    height:33px;
+    margin-left:165px;
+    margin-top:64px;
+    
+}
+.p{
+    font-size:16px;
+    line-height:28px;
+    text-align: left;
+    margin-top:32px;
+    position: relative;
+    top:450px;
+    right:400px;
+    font-size:26px;
+    text-align: none;
+}
+
+.show-error-message{
+    font-size: 6px;
+    color:#f96464;
+    position: absolute;
+    left:100px;
+    top:900px;
+   /* margin-left:125px;
+   margin-top: 0; */
+}
+.show-error-image{
+   width:24px;
+   height:24px;
+    position: relative;
+    left:340px;
+    top:315px;
+}
+input{
+   margin:0;
+   position: relative;
+   right:400px;
+   top:500px;
+   height:54px;
+    /* width:311px;
+    height:48px;
+    border-radius: 28px;
+    background-color: #faf2f2;
+    border:1px #ce9898 solid;
+    color:#ce9898; */
+}
+button{
+/* display: inline;
+width:64px;
+height:54px;
+border-radius:28px;
+background-color: #c66e6e; */
+position: absolute;
+left: 385px;
+top:797px;
+/* border:none; */
+}
+
 }

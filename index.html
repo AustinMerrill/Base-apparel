@@ -5,13 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Base Apparel</title>
     <link href ="css/style.css" rel="stylesheet">
+
 </head>
-<header class="header">
-    <h1><img src="images/logo.svg" alt="logo"></h1>
-</header>
+
 <body>
-    <div class="hero-image">
-        <img src ="images/hero-mobile.jpg" alt="girl">
+    <header class="header">
+        <img src="images/logo.svg" alt="logo">
+    </header>
+    <main>
+    <!-- <div class="desktop">
+        <img src="images/hero-desktop.jpg" alt="girl"> 
+    </div> -->
+    <div class="hero-image backup">
+        <img class="girl" src ="images/hero-mobile.jpg" alt="girl">
     </div>
     <div class ="top-h2">
         <h2>WE'RE </br> <span> COMING </br> SOON</span> </h2>
@@ -22,9 +28,15 @@
             with announcements and our launch deals.
         </p>
     </div>
-    <div class="email">
-        <input type="email" value="Email Address">
+    <div id="email" class="email">
+        <form>
+        <input  class="email-address" placeholder="Email Address">
          <button><img src="images/icon-arrow.svg"></button>
+         <div class="show-error-message"></div>
+         <div class="show-error-image"></div>
+        </form>
     </div>
+</main>
+    <script src="main.js">
 </body>
 </html>
