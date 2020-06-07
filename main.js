@@ -30,7 +30,9 @@ const showErrorImage = document.querySelector('.show-error-image');
 // 3 - event listeners
 // button is clicked and calls submit function
 form.addEventListener('submit', function (e){
+    console.log("code doesn't break here");
     e.preventDefault();
+    console.log("made it past prevent default")
     // console.log(e.target);
     const emailValue = email.value;
     console.log(email.value)
@@ -43,10 +45,10 @@ form.addEventListener('submit', function (e){
         // do nothing
         console.log("great email")
     } else {
-        // console.log("please your email")
+        console.log("please enter valid email")
         showErrorMessage.innerHTML = '<h1>Please provide a valid email</h1>';
         // write code here
-        showErrorImage.innerHTML = '<img src="images/icon-error.svg" alt ="error">'
+        showErrorImage.innerHTML = '<img src="images/icon-error.svg" alt ="error">';
     }
 
 });
